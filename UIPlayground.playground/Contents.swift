@@ -2,8 +2,11 @@
 
 import UIKit
 
-let button = UIButton(frame: CGRect(x:40, y:20, width: 100, height: 50)
+let button = UIButton(frame: CGRectMake(40,20,100,50))
+let anotherbutton=UIButton (frame: CGRectMake(0,0,10,10))
 var UserInterface = UIView(frame: CGRectMake(100,200,100,100))
+let label = UILabel(frame: CGRectMake(15,15,200,75))
+let secondlabel=UILabel(frame: CGRectMake(20,20,100,100))
 var NewUI = UIView(frame: CGRectMake(1,1,300,100))
 var CircleUI = UIView(frame: CGRectMake(100,100,100,100))
 let myColor : UIColor = UIColor (red:0, green: 1, blue:1, alpha: 0.6)
@@ -23,4 +26,17 @@ CircleUI.layer.cornerRadius=50
 CircleUI.layer.borderWidth=5
 CircleUI.layer.borderColor = myColor.CGColor
 CircleUI
-button.layer. = "ahsdf"
+button.setTitle("boi", forState: UIControlState.Normal);
+button
+label.backgroundColor=UIColor.orangeColor();
+label.text="aaaah"
+secondlabel.backgroundColor=UIColor.brownColor()
+secondlabel.layer.borderWidth=10
+secondlabel.layer.cornerRadius=100
+secondlabel
+anotherbutton.backgroundColor=UIColor.greenColor();
+anotherbutton
+var datePicker = UIDatePicker();
+datePicker.datePickerMode = .Date
+datePicker.backgroundColor=UIColor.blueColor()
+datePicker
